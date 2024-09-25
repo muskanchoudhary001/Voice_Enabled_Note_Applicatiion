@@ -1,0 +1,133 @@
+/* Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #3c5b45, #339072, #5d6d7e, #d8f0ae, #799e8a, #ecb1e1, #575e5e, #9cf7fa, #d5dbe1, #687fb6, #eeb4b4, #aeb6f3);
+  background-size: 600% 600%;
+  animation: rainbow 10s ease infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #090101;
+}
+
+textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  border: 2px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  resize: none;
+  transition: box-shadow 0.3s ease;
+}
+
+textarea:focus {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  outline: none;
+  border-color: #5d6d7e;
+}
+
+/* Button Styling */
+button {
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.start-button {
+  background-color: #0066b2; /* Blue color */
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.start-button:hover {
+  background-color: #004c99;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.stop-button {
+  background-color: #e91e63; /* Pink color */
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.stop-button:hover {
+  background-color: #d81b60;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.copy-button {
+  background-color: #4caf50; /* Green color */
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.copy-button:hover {
+  background-color: #388e3c;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.reset-button {
+  background-color: hsl(35, 82%, 57%);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.reset-button:hover {
+  background-color: #cd9a0f;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  textarea {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+}
