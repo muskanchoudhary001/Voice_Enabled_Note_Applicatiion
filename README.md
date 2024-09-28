@@ -86,9 +86,8 @@ A simple, interactive note-taking application powered by **React.js** and **Web 
 This application has been tested on the following browsers:
 - Chrome
 - Edge
-- Firefox
 
-Please note that **Safari** may not fully support the Web Speech API.
+Please note that **Safari** and  **Mozilla Firefox**  may not fully support the Web Speech API.
 
 ## Contributing
 Pull requests and contributions are welcome! Please open an issue first to discuss what you would like to change.
